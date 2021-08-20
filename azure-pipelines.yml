@@ -7,7 +7,7 @@ trigger:
 - fuck-github
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'OMEN'
 
 steps:
 - script: echo Hello, world!
