@@ -7,7 +7,7 @@ trigger:
 - fuck-github
 
 pool:
-  name: 'OMEN'
+  name: 'Default'
 
 steps:
 - script: echo Hello, world!
