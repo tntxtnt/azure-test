@@ -10,10 +10,6 @@ pool:
   name: 'HP Omen 2020'
 
 steps:
-- script:
-    '%VCPKG_ROOT%\\vcpkg list'
-  displayName: 'vcpkg list'
-  
 - script: |
     type index.txt >> index.html
     git add .
@@ -23,4 +19,4 @@ steps:
   displayName: 'Publish GitHub Pages'
   condition: |
     and(not(eq(variables['Build.Reason'], 'PullRequest')),
-        eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+        eq(variables['Build.SourceBranch'], 'refs/heads/fuck-github'))
