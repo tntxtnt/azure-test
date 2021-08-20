@@ -11,5 +11,5 @@ pool:
 
 steps:
 - script:
-    %VCPKG_ROOT%\vcpkg list
+    '%VCPKG_ROOT%\\vcpkg list'
   displayName: 'vcpkg list'
