@@ -7,7 +7,7 @@ trigger:
 - fuck-github
 
 pool:
-  vmImage: 'OMEN'
+  name: 'OMEN'
 
 steps:
 - script: echo Hello, world!
