@@ -12,6 +12,7 @@ pool:
 steps:
 - script: |
     type index.txt >> index.html
+    type index.html
     git add .
     git commit -m "Publishing GitHub Pages  ***NO_CI***"
     git remote set-url --push origin git@github.com:tntxtnt/azure-test.git
