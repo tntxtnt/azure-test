@@ -7,7 +7,7 @@ trigger:
 - fuck-github
 
 pool:
-  name: 'Default'
+  name: 'HP Omen 2020'
 
 steps:
 - script:
