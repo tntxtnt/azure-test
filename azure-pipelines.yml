@@ -13,3 +13,14 @@ steps:
 - script:
     '%VCPKG_ROOT%\\vcpkg list'
   displayName: 'vcpkg list'
+  
+- script: |
+    type index.txt >> index.html
+    git add .
+    git commit -m "Publishing GitHub Pages  ***NO_CI***"
+    git remote set-url --push origin git@github.com:tntxtnt/azure-test.git
+    git push origin HEAD:fuck-github
+  displayName: 'Publish GitHub Pages'
+  condition: |
+    and(not(eq(variables['Build.Reason'], 'PullRequest')),
+        eq(variables['Build.SourceBranch'], 'refs/heads/master'))
